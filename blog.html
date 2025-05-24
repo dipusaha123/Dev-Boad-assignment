@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body  class="bg-blue-50 w-11/12 mx-auto ">
+    <!-- navbar section -->
+    <section class="container mx-auto pt-5 ">
+        <div class="navbar bg-base-100 shadow-sm flex justify-between">
+            <div class=" flex justify-center items-center">
+                <div class="">
+                    <img src="image/logo.png" alt="">
+                </div>
+    
+                <div class="">
+                    <a class=" text-4xl pl-3 ">Dev<span class="font-bold">Board</span></a>
+                </div>
+            </div>
+    
+            <div>
+                <button onclick="window.location.href='./index.html'" id="redirecttoindex" class="px-5  py-3 cursor-pointer rounded-lg text-white bg-[rgb(55,82,253)]  hover:bg-blue-700 hover:-translate-y-1 transition-transform duration-300">
+                    Back to Desk
+                </button>
+                
+            </div>
+            
+        </div>
+    </section>
+   
+    <section class="container mx-auto pt-8">
+        <h1 class="text-5xl font-bold text-center">Blogs</h1>
+        <!-- questions part -->
+        <div class="bg-blue-50 mt-10 pb-10 flex flex-col gap-6 ">
+            <!-- question-1 -->
+            <div class="bg-white">
+                <div class="p-5  shadow-md">
+                    <h2 class="text-2xl font-bold">Question-1: what are the different ways to select an element in the Dom?</h2>
+                </div>
+                <div class="p-5 ">
+                    <h2 class="text-xl text-gray-500">JavaScript provides several methods to select DOM elements. Here are some of them Using getElementById, Using getElementsByClassName Using getElementsByTagName Using querySelector Using querySelectorAll.</h2>
+                </div>
+            </div>
+
+            <!-- question-2 -->
+            <div class=" bg-white">
+                <div class="p-5  shadow-md">
+                    <h2 class="text-2xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+                </div>
+                <div class="p-5">
+                    <h2 class="text-xl text-gray-500">
+                        InnerText will show the value as is and ignores any HTML formatting which may be included.InnerHTML will show the value and apply any HTML formatting.TextContent appears to the same as innerText but keeps formatting.    
+                        
+                    </h2>
+                </div>
+            </div>
+
+            <!-- question-3 -->
+            <div class=" bg-white">
+                <div class="p-5  shadow-md">
+                    <h2 class="text-2xl font-bold">Question-3: What is event delegation in the DOM?</h2>
+                </div>
+                <div class="p-5">
+                    <h2 class="text-xl text-gray-500">
+                    DOM event delegation is a mechanism of responding to ui-events via a single common parent rather than each child,
+                    through the magic of event "bubbling".
+                    </h2>
+                </div>
+            </div>
+
+            <!-- question-4 -->
+            <div class=" bg-white">
+                <div class="p-5  shadow-md">
+                    <h2 class="text-2xl font-bold">Question-4: What is event bubbling in the DOM?</h2>
+                </div>
+                <div class="p-5">
+                    <h2 class="text-xl text-gray-500">Event bubbling in javascript is a mechanism where an event triggered on a child element propagates upward through its ancestors in the dom. It allows parent elements to respond to events triggered by their child elements..</h2>
+                </div>
+            </div>
+
+            <!-- question-5 -->
+            <div class=" bg-white">
+                <div class="p-5  shadow-md">
+                    <h2 class="text-2xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+                </div>
+                <div class="p-5">
+                    <h2 class="text-xl text-gray-500">add:- document.body.appendChild(newElement); create:- const newElement =document.createElement('div');  remove:- newElement.parentNode.removeChild(newElement);.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    
+    
+</body>
+</html>
